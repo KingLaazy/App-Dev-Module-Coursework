@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    tools:context=".AddItemActivity">
+
+    <TextView
+        android:id="@+id/addItemTitle_tv"
+        android:layout_width="162dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Add Item"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/return_b" />
+
+    <EditText
+        android:id="@+id/itemInput_pt"
+        android:layout_width="186dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Item Name..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTitle_tv" />
+
+    <Button
+        android:id="@+id/return_b"
+        android:layout_width="312dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:text="◄"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/barcode_b"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:text="Scan Barcode"
+        app:layout_constraintBottom_toBottomOf="@+id/itemInput_pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/itemInput_pt"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTitle_tv"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/itemDescriptionInput"
+        android:layout_width="319dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Description..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemInput_pt" />
+
+    <ImageView
+        android:id="@+id/camara_b"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        app:layout_constraintEnd_toStartOf="@+id/itemSubmit_b"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/itemDescriptionInput"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescriptionInput"
+        app:srcCompat="@drawable/cameraicon" />
+
+    <Button
+        android:id="@+id/itemSubmit_b"
+        android:layout_width="121dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="4dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescriptionInput" />
+
+    <ImageView
+        android:id="@+id/gallery_b"
+        android:layout_width="75dp"
+        android:layout_height="69dp"
+        app:layout_constraintEnd_toEndOf="@+id/itemDescriptionInput"
+        app:layout_constraintStart_toEndOf="@+id/itemSubmit_b"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescriptionInput"
+        app:srcCompat="@drawable/gallery" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreferencesActivity">
+
+    <RadioGroup
+        android:id="@+id/darkMode_rg"
+        android:layout_width="77dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toEndOf="@+id/darkModeTitle_tv"
+        app:layout_constraintTop_toBottomOf="@+id/preferencesTitle_tv">
+
+        <RadioButton
+            android:id="@+id/darkModeOn_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ON" />
+
+        <RadioButton
+            android:id="@+id/darkModeOff_rb"
+            android:layout_width="125dp"
+            android:layout_height="33dp"
+            android:text="OFF" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/return_b"
+        android:layout_width="312dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:text="◄"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/preferencesTitle_tv"
+        android:layout_width="185dp"
+        android:layout_height="62dp"
+        android:gravity="center"
+        android:text="Prefrences"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/return_b" />
+
+    <TextView
+        android:id="@+id/darkModeTitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="DARK MODE"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/preferencesTitle_tv"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preferencesTitle_tv" />
+
+    <TextView
+        android:id="@+id/textSizeTitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="TEXT SIZE"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/darkModeTitle_tv"
+        app:layout_constraintTop_toBottomOf="@+id/darkModeTitle_tv" />
+
+    <RadioGroup
+        android:id="@+id/textSize_rg"
+        android:layout_width="106dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/darkMode_rg"
+        app:layout_constraintTop_toBottomOf="@+id/darkMode_rg">
+
+        <RadioButton
+            android:id="@+id/textSizeSmall_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMALL" />
+
+        <RadioButton
+            android:id="@+id/textSizeMedium_rb"
+            android:layout_width="125dp"
+            android:layout_height="33dp"
+            android:text="MEDIUM" />
+
+        <RadioButton
+            android:id="@+id/textSizeLarge_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LARGE" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
